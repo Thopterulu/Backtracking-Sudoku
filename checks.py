@@ -36,8 +36,8 @@ class Checker:
     def check_square(self, puzzle:list):
         # define squares
         current_square = self.find_current_square()
-        for y_value in range(current_square["y"][0], current_square["y"][2]):
-            for x_value in range(current_square["x"][0], current_square["x"][2]):
+        for y_value in range(current_square["y"][0], current_square["y"][2]+ 1):
+            for x_value in range(current_square["x"][0], current_square["x"][2]+ 1):
                 if puzzle[y_value][x_value] != -1 and puzzle[y_value][x_value] in self.possible_values:
                     self.possible_values.remove(puzzle[y_value][x_value])
 
