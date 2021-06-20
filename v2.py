@@ -1,6 +1,5 @@
 from a_sudoku import SUDOKU_1
 from checks import Checker
-from just_checking import is_valid
 
 def check_empty(puzzle):
     for y in range(9):
